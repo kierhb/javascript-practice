@@ -8,35 +8,42 @@
         <title>Basketball Scoreboard</title>
     </head>
     <body>
-        <div class="container">
+        <div class ="super-container">
+            <div class="container">
 
-            <div class="home">
-                <h3 id="title-home">HOME</h3>
-                <div id="score-home">
-                    <h4 id="points-home">0</h4>
+                <div class="home">
+                    <h3 id="title-home">HOME</h3>
+                    <div id="score-home">
+                        <h4 id="points-home">0</h4>
+                    </div>
+                    <div class="add-points-home">
+                        <button id="plus-one" onclick="homePlusOne()">+1</button>
+                        <button id="plus-two" onclick="homePlusTwo()">+2</button>
+                        <button id="plus-three" onclick="homePlusThree()">+3</button>
+                    </div>
+                    <button id="minus-one" onclick="homeMinusOne()">-1</button>
                 </div>
-                <div class="add-points-home">
-                    <button id="plus-one" onclick="homePlusOne()">+1</button>
-                    <button id="plus-two" onclick="homePlusTwo()">+2</button>
-                    <button id="plus-three" onclick="homePlusThree()">+3</button>
+
+                <div class="guest">
+                    <h3 id="title-guest">GUEST</h3>
+                    <div id="score-guest">
+                        <h4 id="points-guest">0</h4>
+                    </div>
+                    <div class="add-points-guest">
+                        <button id="plus-one" onclick="guestPlusOne()">+1</button>
+                        <button id="plus-two" onclick="guestPlusTwo()">+2</button>
+                        <button id="plus-three" onclick="guestPlusThree()">+3</button>
+                    </div>
+                    <button id="minus-one" onclick="guestMinusOne()">-1</button>
                 </div>
-                <button id="minus-one" onclick="homeMinusOne()">-1</button>
+
             </div>
 
-            <div class="guest">
-                <h3 id="title-guest">GUEST</h3>
-                <div id="score-guest">
-                    <h4 id="points-guest">0</h4>
-                </div>
-                <div class="add-points-guest">
-                    <button id="plus-one" onclick="guestPlusOne()">+1</button>
-                    <button id="plus-two" onclick="guestPlusTwo()">+2</button>
-                    <button id="plus-three" onclick="guestPlusThree()">+3</button>
-                </div>
-                <button id="minus-one" onclick="guestMinusOne()">-1</button>
+            <div >
+                <button class="stretch-btn" onclick="reset()">NEW GAME</button>
             </div>
-
         </div>
+
         <script src="index.js"></script>
     </body>
 </html>

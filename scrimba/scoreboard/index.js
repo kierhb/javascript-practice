@@ -46,3 +46,11 @@ function guestMinusOne() {
     scoreG -= 1
     pointsGuest.innerText = scoreG
 }
+
+
+function reset() {
+    scoreH = 0
+    pointsHome.innerText = 0
+    scoreG = 0
+    pointsGuest.innerText = 0
+}
